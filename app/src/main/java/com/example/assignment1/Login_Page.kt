@@ -27,7 +27,7 @@ class Login_Page : AppCompatActivity() {
         var loginButton= findViewById<Button>(R.id.loginButton)
         loginButton.setOnClickListener(
             {
-            val intent: Intent = Intent(this@Login_Page, Login_Username_Password::class.java)
+            val intent: Intent = Intent(this@Login_Page, Main_feed::class.java)
             startActivity(intent)
             finish() // optional → closes LoginActivity
         })
