@@ -20,6 +20,13 @@
             android:layout_width="49dp"
             android:layout_height="match_parent"
             android:src="@drawable/camera_top" />
+        <ImageView
+            android:id="@+id/captured_image"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:scaleType="centerCrop"
+            android:layout_marginTop="20dp"/>
+
 
         <TextView
             android:id="@+id/app_icon"
@@ -439,7 +446,7 @@
                     android:id="@+id/post_caption2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="karennne Enjoying summer vibes!"
+                    android:text="karennne Enjoying summer vibes! ✨"
                     android:textSize="13sp"
                     android:layout_below="@id/post_likes2"
                     android:layout_marginTop="2dp" />
@@ -546,7 +553,7 @@
                     android:id="@+id/post_caption3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="zackjohn Exploring new places ✨"
+                    android:text="zackjohn my favourite ✨"
                     android:textSize="13sp"
                     android:layout_below="@id/post_likes3"
                     android:layout_marginTop="2dp" />
@@ -569,7 +576,7 @@
             android:id="@+id/nav_home"
             android:layout_width="32dp"
             android:layout_height="32dp"
-            android:src="@drawable/home_icon"
+            android:src="@drawable/home_icon_filled"
             android:layout_margin="16dp"/>
 
         <ImageView
@@ -578,13 +585,19 @@
             android:layout_height="32dp"
             android:src="@drawable/search_icon"
             android:layout_margin="16dp"/>
-
+        <ImageView
+            android:id="@+id/previewImage"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="20dp"
+            android:scaleType="centerCrop"/>
         <ImageView
             android:id="@+id/nav_reel"
             android:layout_width="32dp"
             android:layout_height="32dp"
             android:src="@drawable/reel_icon"
             android:layout_margin="16dp"/>
+
 
         <ImageView
             android:id="@+id/nav_heart"
