@@ -7,8 +7,6 @@
     android:layout_height="match_parent"
     android:background="#FFFFFF"
     tools:context=".Main_feed">
-
-    <!-- ================= Top Bar ================= -->
     <RelativeLayout
         android:id="@+id/top_bar"
         android:layout_width="match_parent"
@@ -17,8 +15,6 @@
         android:layout_alignParentTop="true"
         android:layout_marginTop="25dp"
         android:padding="10dp">
-
-        <!-- App Icon -->
         <ImageView
             android:id="@+id/camera"
             android:layout_width="49dp"
@@ -52,8 +48,6 @@
             android:layout_centerVertical="true" />
     </RelativeLayout>
 
-
-    <!-- ================= Scrollable Content ================= -->
     <ScrollView
         android:id="@+id/scroll_content"
         android:layout_width="match_parent"
@@ -80,8 +74,6 @@
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:orientation="horizontal">
-
-                    <!-- Story Items -->
                     <LinearLayout
                         android:layout_width="80dp"
                         android:layout_height="match_parent"
@@ -108,7 +100,7 @@
                         <de.hdodenhof.circleimageview.CircleImageView
                             android:layout_width="60dp"
                             android:layout_height="60dp"
-                            android:src="@drawable/profile"
+                            android:src="@drawable/story1"
                             app:civ_border_width="2dp"
                             app:civ_border_color="@android:color/holo_red_dark"/>
                         <TextView
@@ -126,7 +118,7 @@
                         <de.hdodenhof.circleimageview.CircleImageView
                             android:layout_width="60dp"
                             android:layout_height="60dp"
-                            android:src="@drawable/profile"
+                            android:src="@drawable/story2"
                             app:civ_border_width="2dp"
                             app:civ_border_color="@android:color/holo_red_dark"/>
                         <TextView
@@ -143,7 +135,7 @@
                         <de.hdodenhof.circleimageview.CircleImageView
                             android:layout_width="60dp"
                             android:layout_height="60dp"
-                            android:src="@drawable/profile"
+                            android:src="@drawable/story3"
                             app:civ_border_width="2dp"
                             app:civ_border_color="@android:color/holo_red_dark"/>
                         <TextView
@@ -160,7 +152,7 @@
                         <de.hdodenhof.circleimageview.CircleImageView
                             android:layout_width="60dp"
                             android:layout_height="60dp"
-                            android:src="@drawable/profile"
+                            android:src="@drawable/stroy4"
                             app:civ_border_width="2dp"
                             app:civ_border_color="@android:color/holo_red_dark"/>
                         <TextView
@@ -177,7 +169,7 @@
                         <de.hdodenhof.circleimageview.CircleImageView
                             android:layout_width="60dp"
                             android:layout_height="60dp"
-                            android:src="@drawable/profile"
+                            android:src="@drawable/story5"
                             app:civ_border_width="2dp"
                             app:civ_border_color="@android:color/holo_red_dark"/>
                         <TextView
@@ -194,7 +186,7 @@
                         <de.hdodenhof.circleimageview.CircleImageView
                             android:layout_width="60dp"
                             android:layout_height="60dp"
-                            android:src="@drawable/profile"
+                            android:src="@drawable/story6"
                             app:civ_border_width="2dp"
                             app:civ_border_color="@android:color/holo_red_dark"/>
                         <TextView
@@ -203,28 +195,10 @@
                             android:text="kieron_d"
                             android:textSize="12sp"/>
                     </LinearLayout>
-                    <LinearLayout
-                        android:layout_width="80dp"
-                        android:layout_height="match_parent"
-                        android:orientation="vertical"
-                        android:gravity="center">
-                        <de.hdodenhof.circleimageview.CircleImageView
-                            android:layout_width="60dp"
-                            android:layout_height="60dp"
-                            android:src="@drawable/profile"
-                            app:civ_border_width="2dp"
-                            app:civ_border_color="@android:color/holo_red_dark"/>
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="kieron_d"
-                            android:textSize="12sp"/>
-                    </LinearLayout>
+
                 </LinearLayout>
 
             </HorizontalScrollView>
-
-            <!-- Post Header -->
             <RelativeLayout
                 android:id="@+id/post_header"
                 android:layout_width="match_parent"
@@ -251,14 +225,25 @@
                     android:textSize="15sp"
                     android:layout_toEndOf="@id/profile_pic"
                     android:layout_marginStart="8dp"
-                    android:layout_centerVertical="true"/>
+                    />
+                <TextView
+                    android:id="@+id/username_location"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tokyo, Japan"
+                    android:textStyle="italic"
+                    android:textSize="15sp"
+                    android:layout_below="@+id/username"
+                    android:layout_toEndOf="@id/profile_pic"
+                    android:layout_marginStart="8dp"
+                    />
                 <ImageView
                     android:id="@+id/verified_badge"
                     android:layout_width="25dp"
                     android:layout_height="20dp"
                     android:src="@drawable/verified_badge"
                     android:layout_toEndOf="@id/username"
-                    android:layout_centerVertical="true"/>
+                    />
                 <ImageView
                     android:id="@+id/more_icon"
                     android:layout_width="20dp"
@@ -268,8 +253,6 @@
                     android:layout_centerVertical="true"/>
             </RelativeLayout>
 
-
-            <!-- ================= First Post ================= -->
             <RelativeLayout
                 android:id="@+id/post1"
                 android:layout_width="match_parent"
@@ -282,40 +265,20 @@
                     android:id="@+id/profile_pic1"
                     android:layout_width="40dp"
                     android:layout_height="40dp"
-                    android:src="@drawable/profile"
+                    android:src="@drawable/ps1"
                     app:civ_border_width="2dp"
                     app:civ_border_color="@android:color/holo_red_dark"/>
-
-                <TextView
-                    android:id="@+id/username1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="joshua_l"
-                    android:textStyle="bold"
-                    android:textSize="15sp"
-                    android:layout_toEndOf="@id/profile_pic1"
-                    android:layout_marginStart="8dp"
-                    android:layout_centerVertical="true"/>
-
-                <ImageView
-                    android:id="@+id/more_icon1"
-                    android:layout_width="20dp"
-                    android:layout_height="20dp"
-                    android:src="@drawable/more_icon"
-                    android:layout_alignParentEnd="true"
-                    android:layout_centerVertical="true"/>
 
                 <!-- Post Image -->
                 <ImageView
                     android:id="@+id/post_image1"
                     android:layout_width="match_parent"
-                    android:layout_height="250dp"
+                    android:layout_height="match_parent"
                     android:layout_below="@id/profile_pic1"
                     android:layout_marginTop="8dp"
                     android:scaleType="centerCrop"
-                    android:src="@drawable/profile" />
+                    android:src="@drawable/post1" />
 
-                <!-- Actions -->
                 <LinearLayout
                     android:id="@+id/post_actions1"
                     android:layout_width="match_parent"
@@ -382,7 +345,7 @@
                     android:id="@+id/profile_pic2"
                     android:layout_width="40dp"
                     android:layout_height="40dp"
-                    android:src="@drawable/profile"
+                    android:src="@drawable/story1"
                     app:civ_border_width="2dp"
                     app:civ_border_color="@android:color/holo_red_dark"
                     android:layout_alignParentStart="true"
@@ -403,25 +366,29 @@
                     android:layout_marginTop="12dp"
                     />
 
+
+
                 <ImageView
                     android:id="@+id/more_icon2"
                     android:layout_width="20dp"
                     android:layout_height="20dp"
-                    android:layout_toEndOf="@id/username2"
                     android:src="@drawable/more_icon"
-                    android:layout_alignParentEnd="true"
-                    android:layout_centerVertical="true"/>
-                <!-- Post Image -->
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="15dp"
+                    />
+
+
+
                 <ImageView
                     android:id="@+id/post_image2"
                     android:layout_width="match_parent"
-                    android:layout_height="250dp"
+                    android:layout_height="450dp"
                     android:layout_below="@id/profile_pic2"
                     android:layout_marginTop="8dp"
                     android:scaleType="centerCrop"
-                    android:src="@drawable/profile" />
+                    android:src="@drawable/picture1" />
 
-                <!-- Actions -->
                 <LinearLayout
                     android:id="@+id/post_actions2"
                     android:layout_width="match_parent"
@@ -491,7 +458,7 @@
                     android:id="@+id/profile_pic3"
                     android:layout_width="40dp"
                     android:layout_height="40dp"
-                    android:src="@drawable/profile"
+                    android:src="@drawable/story2"
                     app:civ_border_width="2dp"
                     app:civ_border_color="@android:color/holo_red_dark"
                     android:layout_alignParentStart="true"
@@ -514,18 +481,19 @@
                     android:layout_width="20dp"
                     android:layout_height="20dp"
                     android:src="@drawable/more_icon"
-                    android:layout_alignParentEnd="true"
-                    android:layout_centerVertical="true"/>
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="15dp"/>
 
                 <!-- Post Image -->
                 <ImageView
                     android:id="@+id/post_image3"
                     android:layout_width="match_parent"
-                    android:layout_height="250dp"
+                    android:layout_height="match_parent"
                     android:layout_below="@id/profile_pic3"
                     android:layout_marginTop="8dp"
                     android:scaleType="centerCrop"
-                    android:src="@drawable/profile" />
+                    android:src="@drawable/picture2" />
 
                 <!-- Actions -->
                 <LinearLayout
