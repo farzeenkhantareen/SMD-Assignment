@@ -38,6 +38,11 @@ class Main_feed : AppCompatActivity() {
             val intent = Intent(this, Explore_page::class.java)
             startActivity(intent)   // <-- missing line
         }
+        val nav_profile=findViewById<ImageView>(R.id.nav_profile)
+        nav_profile.setOnClickListener {
+            val intent = Intent(this, Profile::class.java)
+            startActivity(intent)   // <-- missing line
+        }
 
         cameraIcon=findViewById(R.id.camera)
         capturedImage=findViewById(R.id.captured_image)

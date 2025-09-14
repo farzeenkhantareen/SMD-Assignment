@@ -26,6 +26,12 @@ class Explore_page : AppCompatActivity() {
             startActivity(intent)
             finish()
         }
+        val nav_profile=findViewById<ImageView>(R.id.nav_profile)
+        nav_profile.setOnClickListener {
+            val intent = Intent(this, Profile::class.java)
+            startActivity(intent)
+            finish()
+        }
 
     }
 }

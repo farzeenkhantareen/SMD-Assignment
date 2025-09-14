@@ -1,0 +1,39 @@
+package com.example.assignment1
+
+import android.annotation.SuppressLint
+import android.content.Intent
+import android.os.Bundle
+import android.widget.ImageView
+import android.widget.RelativeLayout
+import androidx.activity.enableEdgeToEdge
+import androidx.appcompat.app.AppCompatActivity
+import androidx.core.view.ViewCompat
+import androidx.core.view.WindowInsetsCompat
+
+class Profile : AppCompatActivity() {
+    @SuppressLint("MissingInflatedId")
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        enableEdgeToEdge()
+        setContentView(R.layout.activity_profile)
+        var nav_home=findViewById<ImageView>(R.id.nav_home)
+        nav_home.setOnClickListener {
+            val Intent = Intent(this, Main_feed::class.java)
+            startActivity(Intent)
+            finish()
+        }
+        var nav_search=findViewById<ImageView>(R.id.nav_search)
+        nav_search.setOnClickListener {
+            val Intent = Intent(this, Explore_page::class.java)
+            startActivity(Intent)
+            finish()
+        }
+        val edit_page=findViewById<RelativeLayout>(R.id.edit_page)
+        edit_page.setOnClickListener {
+            val Intent = Intent(this, Edit_profile::class.java)
+            startActivity(Intent)
+            finish()
+        }
+
+    }
+}
