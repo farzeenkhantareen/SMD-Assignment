@@ -41,6 +41,14 @@ class Profile : AppCompatActivity() {
             startActivity(Intent)
             finish()
         }
+        val friends_highlight=findViewById<RelativeLayout>(R.id.friends_highlight)
+        friends_highlight.setOnClickListener {
+            val Intent = Intent(this, Highlight::class.java)
+            startActivity(Intent)
+            finish()
+        }
+
+
 
     }
 }

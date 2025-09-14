@@ -101,11 +101,13 @@
                     </LinearLayout>
 
                     <LinearLayout
+                        android:id="@+id/story_setup"
                         android:layout_width="80dp"
                         android:layout_height="match_parent"
                         android:orientation="vertical"
                         android:gravity="center">
                         <de.hdodenhof.circleimageview.CircleImageView
+
                             android:layout_width="60dp"
                             android:layout_height="60dp"
                             android:src="@drawable/story1"

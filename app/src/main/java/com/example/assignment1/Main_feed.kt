@@ -8,6 +8,7 @@ import android.net.Uri
 import android.os.Bundle
 import android.provider.MediaStore
 import android.widget.ImageView
+import android.widget.LinearLayout
 import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -66,12 +67,17 @@ class Main_feed : AppCompatActivity() {
         }
         val story=findViewById<ImageView>(R.id.story)
         story.setOnClickListener {
-            val intent = Intent(this, Story::class.java)
+            val intent = Intent(this, Edit_Story::class.java)
             startActivity(intent)   // <-- missing line
             finish()
         }
 
-
+val story_setup=findViewById<LinearLayout>(R.id.story_setup)
+        story_setup.setOnClickListener {
+            val intent = Intent(this, Friend_Story::class.java)
+            startActivity(intent)   // <-- missing line
+            finish()
+        }
         cameraIcon=findViewById(R.id.camera)
         capturedImage=findViewById(R.id.captured_image)
         cameraIcon.setOnClickListener {
