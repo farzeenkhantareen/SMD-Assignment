@@ -6,7 +6,6 @@
     android:paddingLeft="16dp"
     android:paddingRight="16dp">
 
-    <!-- Top Bar -->
     <RelativeLayout
         android:id="@+id/top_bar"
         android:layout_width="match_parent"
@@ -55,7 +54,6 @@
 
     </RelativeLayout>
 
-    <!-- Divider under top bar -->
     <View
         android:id="@+id/top_divider"
         android:layout_width="match_parent"
@@ -63,7 +61,6 @@
         android:layout_below="@id/top_bar"
         android:background="#E0E0E0" />
 
-    <!-- Scrollable Content -->
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -78,7 +75,6 @@
             android:layout_height="wrap_content"
             android:paddingTop="32dp">
 
-            <!-- Profile Photo Section -->
             <RelativeLayout
                 android:id="@+id/photo_section"
                 android:layout_width="match_parent"
@@ -104,7 +100,6 @@
                     android:text="Change Profile Photo"
                     android:textColor="@color/main_color"
                     android:textSize="14sp"
-                    android:background="?android:attr/selectableItemBackground"
                     android:paddingLeft="8dp"
                     android:paddingRight="8dp"
                     android:paddingTop="8dp"
@@ -112,7 +107,6 @@
 
             </RelativeLayout>
 
-            <!-- Form Fields -->
             <RelativeLayout
                 android:id="@+id/form_section"
                 android:layout_width="match_parent"
@@ -120,7 +114,6 @@
                 android:layout_below="@id/photo_section"
                 android:layout_marginTop="40dp">
 
-                <!-- Name Field -->
                 <RelativeLayout
                     android:id="@+id/name_field"
                     android:layout_width="match_parent"
@@ -153,7 +146,6 @@
 
                 </RelativeLayout>
 
-                <!-- Divider -->
                 <View
                     android:id="@+id/divider1"
                     android:layout_width="match_parent"
@@ -162,7 +154,6 @@
                     android:layout_marginLeft="80dp"
                     android:background="#E0E0E0" />
 
-                <!-- Username Field -->
                 <RelativeLayout
                     android:id="@+id/username_field"
                     android:layout_width="match_parent"
@@ -195,7 +186,6 @@
 
                 </RelativeLayout>
 
-                <!-- Divider -->
                 <View
                     android:id="@+id/divider2"
                     android:layout_width="match_parent"
@@ -204,7 +194,6 @@
                     android:layout_marginLeft="80dp"
                     android:background="#E0E0E0" />
 
-                <!-- Website Field -->
                 <RelativeLayout
                     android:id="@+id/website_field"
                     android:layout_width="match_parent"
@@ -238,7 +227,6 @@
 
                 </RelativeLayout>
 
-                <!-- Divider -->
                 <View
                     android:id="@+id/divider3"
                     android:layout_width="match_parent"
@@ -247,7 +235,6 @@
                     android:layout_marginLeft="80dp"
                     android:background="#E0E0E0" />
 
-                <!-- Bio Field -->
                 <RelativeLayout
                     android:id="@+id/bio_field"
                     android:layout_width="match_parent"
@@ -287,7 +274,6 @@
 
                 </RelativeLayout>
 
-                <!-- Divider -->
                 <View
                     android:id="@+id/divider4"
                     android:layout_width="match_parent"
@@ -296,7 +282,6 @@
                     android:layout_marginLeft="80dp"
                     android:background="#E0E0E0" />
 
-                <!-- Switch to Professional Account -->
                 <TextView
                     android:id="@+id/professional_account"
                     android:layout_width="match_parent"
@@ -307,13 +292,11 @@
                     android:text="Switch to Professional Account"
                     android:textColor="@color/main_color"
                     android:textSize="16sp"
-                    android:background="?android:attr/selectableItemBackground"
                     android:paddingLeft="0dp"
                     android:paddingRight="8dp"
                     android:paddingTop="8dp"
                     android:paddingBottom="8dp" />
 
-                <!-- Private Information Header -->
                 <TextView
                     android:id="@+id/private_info_header"
                     android:layout_width="match_parent"
@@ -326,7 +309,6 @@
                     android:textStyle="bold"
                     android:textAllCaps="false" />
 
-                <!-- Email Field -->
                 <RelativeLayout
                     android:id="@+id/email_field"
                     android:layout_width="match_parent"
@@ -361,7 +343,6 @@
 
                 </RelativeLayout>
 
-                <!-- Divider -->
                 <View
                     android:id="@+id/divider5"
                     android:layout_width="match_parent"
@@ -370,7 +351,6 @@
                     android:layout_marginLeft="80dp"
                     android:background="#E0E0E0" />
 
-                <!-- Phone Field -->
                 <RelativeLayout
                     android:id="@+id/phone_field"
                     android:layout_width="match_parent"
@@ -404,7 +384,6 @@
 
                 </RelativeLayout>
 
-                <!-- Divider -->
                 <View
                     android:id="@+id/divider6"
                     android:layout_width="match_parent"
@@ -413,7 +392,6 @@
                     android:layout_marginLeft="80dp"
                     android:background="#E0E0E0" />
 
-                <!-- Gender Field -->
                 <RelativeLayout
                     android:id="@+id/gender_field"
                     android:layout_width="match_parent"
@@ -448,7 +426,6 @@
 
                 </RelativeLayout>
 
-                <!-- Bottom padding -->
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="40dp"

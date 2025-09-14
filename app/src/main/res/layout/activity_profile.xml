@@ -19,7 +19,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
-            <!-- Top Header -->
             <RelativeLayout
                 android:id="@+id/header_container"
                 android:layout_width="match_parent"
@@ -29,7 +28,6 @@
                 android:paddingEnd="16dp"
                 android:paddingTop="8dp">
 
-                <!-- Lock icon -->
                 <ImageView
                     android:id="@+id/lock_icon"
                     android:layout_width="16dp"
@@ -39,7 +37,6 @@
                     android:layout_marginEnd="4dp"
                     android:src="@drawable/ic_lock" />
 
-                <!-- Username -->
                 <TextView
                     android:id="@+id/username_text"
                     android:layout_width="wrap_content"
@@ -50,7 +47,6 @@
                     android:textSize="16sp"
                     android:textStyle="bold" />
 
-                <!-- Dropdown arrow -->
                 <ImageView
                     android:id="@+id/dropdown_icon"
                     android:layout_width="14dp"
@@ -60,7 +56,6 @@
                     android:layout_marginStart="4dp"
                     android:src="@drawable/ic_arrow_drop_down" />
 
-                <!-- Hamburger menu -->
                 <ImageView
                     android:id="@+id/profile_menu"
                     android:layout_width="24dp"
@@ -71,7 +66,6 @@
 
             </RelativeLayout>
 
-            <!-- Profile Picture and Stats -->
             <RelativeLayout
                 android:id="@+id/profile_stats_container"
                 android:layout_width="match_parent"
@@ -81,7 +75,6 @@
                 android:paddingStart="16dp"
                 android:paddingEnd="16dp">
 
-                <!-- Profile Picture -->
                 <de.hdodenhof.circleimageview.CircleImageView
                     android:id="@+id/profile_picture"
                     android:layout_width="86dp"
@@ -90,7 +83,6 @@
                     android:layout_centerVertical="true"
                     android:src="@drawable/profile" />
 
-                <!-- Stats Container -->
                 <RelativeLayout
                     android:id="@+id/stats_container"
                     android:layout_width="wrap_content"
@@ -99,7 +91,6 @@
                     android:layout_marginStart="16dp"
                     android:layout_toEndOf="@id/profile_picture">
 
-                    <!-- Posts Stats -->
                     <RelativeLayout
                         android:id="@+id/posts_stat"
                         android:layout_width="54dp"
@@ -130,7 +121,6 @@
 
                     </RelativeLayout>
 
-                    <!-- Followers Stats -->
                     <RelativeLayout
                         android:id="@+id/followers_stat"
                         android:layout_width="64dp"
@@ -161,7 +151,6 @@
 
                     </RelativeLayout>
 
-                    <!-- Following Stats -->
                     <RelativeLayout
                         android:id="@+id/following_stat"
                         android:layout_width="64dp"
@@ -196,7 +185,6 @@
 
             </RelativeLayout>
 
-            <!-- Bio Section -->
             <RelativeLayout
                 android:id="@+id/bio_container"
                 android:layout_width="match_parent"
@@ -252,7 +240,6 @@
 
             </RelativeLayout>
 
-            <!-- Edit Profile Button -->
             <androidx.cardview.widget.CardView
                 android:id="@+id/edit_profile_card"
                 android:layout_width="match_parent"
@@ -285,7 +272,6 @@
 
             </androidx.cardview.widget.CardView>
 
-            <!-- Story Highlights -->
             <RelativeLayout
                 android:id="@+id/highlights_container"
                 android:layout_width="match_parent"
@@ -295,7 +281,6 @@
                 android:paddingStart="16dp"
                 android:paddingEnd="16dp">
 
-                <!-- New Story Highlight -->
                 <RelativeLayout
                     android:id="@+id/new_highlight"
                     android:layout_width="64dp"
@@ -338,7 +323,6 @@
 
                 </RelativeLayout>
 
-                <!-- Friends Highlight -->
                 <RelativeLayout
                     android:id="@+id/friends_highlight"
                     android:layout_width="64dp"
@@ -366,7 +350,6 @@
 
                 </RelativeLayout>
 
-                <!-- Sport Highlight -->
                 <RelativeLayout
                     android:id="@+id/sport_highlight"
                     android:layout_width="64dp"
@@ -394,7 +377,6 @@
 
                 </RelativeLayout>
 
-                <!-- Design Highlight -->
                 <RelativeLayout
                     android:id="@+id/design_highlight"
                     android:layout_width="64dp"
@@ -424,7 +406,6 @@
 
             </RelativeLayout>
 
-            <!-- Tab Selector -->
             <RelativeLayout
                 android:id="@+id/tab_selector"
                 android:layout_width="match_parent"
@@ -432,7 +413,6 @@
                 android:layout_below="@id/highlights_container"
                 android:layout_marginTop="8dp">
 
-                <!-- Grid Tab (Active) -->
                 <RelativeLayout
                     android:id="@+id/grid_tab"
                     android:layout_width="0dp"
@@ -446,17 +426,20 @@
                         android:layout_centerInParent="true"
                         android:src="@drawable/ic_grid"
                         app:tint="@color/main_color" />
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="3dp"
+                        android:layout_marginTop="40dp"
+                        android:background="@color/main_color" />
 
                 </RelativeLayout>
 
-                <!-- Center Divider -->
                 <View
                     android:id="@+id/tab_divider"
                     android:layout_width="1dp"
                     android:layout_height="match_parent"
                     android:layout_centerHorizontal="true" />
 
-                <!-- Tagged Tab (Inactive) -->
                 <RelativeLayout
                     android:id="@+id/tagged_tab"
                     android:layout_width="0dp"
@@ -476,21 +459,18 @@
 
             </RelativeLayout>
 
-            <!-- Posts Grid -->
             <RelativeLayout
                 android:id="@+id/posts_grid"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/tab_selector">
 
-                <!-- Row 1 -->
                 <RelativeLayout
                     android:id="@+id/row_1"
                     android:layout_width="match_parent"
                     android:layout_height="125dp"
                     android:layout_alignParentTop="true">
 
-                    <!-- Post 1 -->
                     <ImageView
                         android:id="@+id/post_1_1"
                         android:layout_width="120dp"
@@ -500,7 +480,6 @@
                         android:scaleType="centerCrop"
                         android:src="@drawable/p_post1" />
 
-                    <!-- Post 2 -->
                     <ImageView
                         android:id="@+id/post_1_2"
                         android:layout_width="120dp"
@@ -512,7 +491,6 @@
                         android:scaleType="centerCrop"
                         android:src="@drawable/p_post2" />
 
-                    <!-- Post 3 -->
                     <ImageView
                         android:id="@+id/post_1_3"
                         android:layout_width="120dp"
@@ -525,7 +503,6 @@
 
                 </RelativeLayout>
 
-                <!-- Row 2 -->
                 <RelativeLayout
                     android:id="@+id/row_2"
                     android:layout_width="match_parent"
@@ -541,7 +518,6 @@
                         android:scaleType="centerCrop"
                         android:src="@drawable/p_post4" />
 
-                    <!-- Post 2 -->
                     <ImageView
                         android:id="@+id/post_2_2"
                         android:layout_width="120dp"
@@ -553,7 +529,6 @@
                         android:scaleType="centerCrop"
                         android:src="@drawable/p_post5" />
 
-                    <!-- Post 3 -->
                     <ImageView
                         android:id="@+id/post_2_3"
                         android:layout_width="120dp"
@@ -565,7 +540,6 @@
 
                 </RelativeLayout>
 
-                <!-- Row 3 -->
                 <RelativeLayout
                     android:id="@+id/row_3"
                     android:layout_width="match_parent"
@@ -583,7 +557,6 @@
                         android:scaleType="centerCrop"
                         android:src="@drawable/p_post7" />
 
-                    <!-- Post 2 -->
                     <ImageView
                         android:id="@+id/post_3_2"
                         android:layout_width="120dp"
@@ -596,7 +569,6 @@
                         android:scaleType="centerCrop"
                         android:src="@drawable/p_post8" />
 
-                    <!-- Post 3 -->
                     <ImageView
                         android:id="@+id/post_3_3"
                         android:layout_width="120dp"
@@ -614,7 +586,6 @@
 
     </ScrollView>
 
-    <!-- Bottom Navigation Bar (Fixed) -->
     <LinearLayout
         android:id="@+id/bottom_bar"
         android:layout_width="match_parent"

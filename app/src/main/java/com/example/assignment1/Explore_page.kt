@@ -32,6 +32,13 @@ class Explore_page : AppCompatActivity() {
             startActivity(intent)
             finish()
         }
+        val nav_heart=findViewById<ImageView>(R.id.nav_heart)
+        nav_heart.setOnClickListener {
+            val intent = Intent(this, Notification_You::class.java)
+            startActivity(intent)
+            finish()
+        }
+
 
     }
 }

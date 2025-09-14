@@ -28,6 +28,13 @@ class Profile : AppCompatActivity() {
             startActivity(Intent)
             finish()
         }
+        var nav_heart=findViewById<ImageView>(R.id.nav_heart)
+        nav_heart.setOnClickListener {
+            val Intent = Intent(this, Notification_You::class.java)
+            startActivity(Intent)
+            finish()
+        }
+
         val edit_page=findViewById<RelativeLayout>(R.id.edit_page)
         edit_page.setOnClickListener {
             val Intent = Intent(this, Edit_profile::class.java)

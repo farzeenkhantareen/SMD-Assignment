@@ -55,7 +55,6 @@
 
     </RelativeLayout>
 
-    <!-- Search Bar -->
         <RelativeLayout
         android:id="@+id/searchLayout"
         android:layout_width="match_parent"
@@ -63,9 +62,7 @@
         android:layout_below="@id/headerLayout"
         android:background="@color/white"
         android:paddingLeft="16dp"
-        android:paddingRight="16dp"
-
-                    >
+        android:paddingRight="16dp">
 
             <EditText
                 android:id="@+id/searchEditText_for_dm"
@@ -89,7 +86,6 @@
 
     </RelativeLayout>
 
-    <!-- Chat List ScrollView -->
     <ScrollView
         android:id="@+id/chatScrollView"
         android:layout_width="match_parent"
@@ -164,7 +160,6 @@
 
             </RelativeLayout>
 
-            <!-- Chat Item 2 -->
             <RelativeLayout
                 android:id="@+id/chat2"
                 android:layout_width="match_parent"
@@ -229,7 +224,6 @@
 
             </RelativeLayout>
 
-            <!-- Chat Item 3 -->
             <RelativeLayout
                 android:id="@+id/chat3"
                 android:layout_width="match_parent"
@@ -294,7 +288,6 @@
 
             </RelativeLayout>
 
-            <!-- Chat Item 4 -->
             <RelativeLayout
                 android:id="@+id/chat4"
                 android:layout_width="match_parent"
@@ -359,7 +352,6 @@
 
             </RelativeLayout>
 
-            <!-- Chat Item 5 -->
             <RelativeLayout
                 android:id="@+id/chat5"
                 android:layout_width="match_parent"
@@ -424,7 +416,6 @@
 
             </RelativeLayout>
 
-            <!-- Chat Item 6 -->
             <RelativeLayout
                 android:id="@+id/chat6"
                 android:layout_width="match_parent"
@@ -493,7 +484,6 @@
 
     </ScrollView>
 
-    <!-- Bottom Camera Bar -->
     <RelativeLayout
         android:id="@+id/bottomBar"
         android:layout_width="match_parent"
@@ -502,7 +492,6 @@
         android:background="#FFFFFF"
         android:elevation="4dp">
 
-        <!-- Center container for icon + text -->
         <LinearLayout
             android:id="@+id/cameraContainer"
             android:layout_width="wrap_content"

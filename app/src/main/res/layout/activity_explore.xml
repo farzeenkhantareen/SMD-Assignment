@@ -5,7 +5,6 @@
     android:layout_height="match_parent"
     android:background="#FFFFFF">
 
-    <!-- Scrollable Content -->
     <ScrollView
         android:id="@+id/scroll_content"
         android:layout_width="match_parent"
@@ -26,7 +25,6 @@
                 android:paddingBottom="12dp"
                 android:background="#FFFFFF">
 
-                <!-- Search Bar -->
                 <LinearLayout
                     android:id="@+id/search_bar_layout"
                     android:layout_width="match_parent"
@@ -61,7 +59,6 @@
                         android:src="@drawable/ic_scan" />
                 </LinearLayout>
 
-                <!-- Category Tags -->
                 <HorizontalScrollView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -74,7 +71,6 @@
                         android:layout_height="wrap_content"
                         android:orientation="horizontal">
 
-                        <!-- Shop Tag -->
                         <LinearLayout
                             android:layout_width="wrap_content"
                             android:layout_height="30dp"
@@ -100,7 +96,6 @@
 
                         </LinearLayout>
 
-                        <!-- Other Tags -->
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="30dp"
@@ -166,7 +161,6 @@
                         android:layout_height="wrap_content"
                         android:orientation="vertical">
 
-                        <!-- Row 1: Large left + 2 small right -->
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
@@ -208,7 +202,6 @@
 
                         </LinearLayout>
 
-                        <!-- Row 2: 3 equal images -->
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
@@ -243,7 +236,6 @@
 
                         </LinearLayout>
 
-                        <!-- Row 3: 3 equal images -->
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
@@ -278,7 +270,6 @@
 
                         </LinearLayout>
 
-                        <!-- Row 4: 2 large images -->
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
@@ -304,7 +295,6 @@
 
                         </LinearLayout>
 
-                        <!-- Row 5: 2 small left + 1 large right -->
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
@@ -346,7 +336,6 @@
                                 android:layout_marginStart="0.5dp" />
 
                         </LinearLayout>
-                        <!-- Bottom padding for smooth scrolling -->
                         <View
                             android:layout_width="match_parent"
                             android:layout_height="80dp" />
@@ -356,7 +345,6 @@
                 </ScrollView>
             </LinearLayout>
 
-            <!-- Bottom Padding -->
             <View
                 android:layout_width="match_parent"
                 android:layout_height="80dp" />

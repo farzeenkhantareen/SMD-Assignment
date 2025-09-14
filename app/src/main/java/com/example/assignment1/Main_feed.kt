@@ -8,6 +8,7 @@ import android.net.Uri
 import android.os.Bundle
 import android.provider.MediaStore
 import android.widget.ImageView
+import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -38,11 +39,31 @@ class Main_feed : AppCompatActivity() {
             val intent = Intent(this, Explore_page::class.java)
             startActivity(intent)   // <-- missing line
         }
+        val nav_heart=findViewById<ImageView>(R.id.nav_heart)
+        nav_heart.setOnClickListener {
+            val intent = Intent(this, Notification_You::class.java)
+            startActivity(intent)   // <-- missing line
+            finish()
+        }
+
         val nav_profile=findViewById<ImageView>(R.id.nav_profile)
         nav_profile.setOnClickListener {
             val intent = Intent(this, Profile::class.java)
             startActivity(intent)   // <-- missing line
         }
+        val profile_pic1=findViewById<ImageView>(R.id.profile_pic1)
+        profile_pic1.setOnClickListener {
+            val intent = Intent(this, Other_Person_Profile::class.java)
+            startActivity(intent)   // <-- missing line
+
+        }
+        val username=findViewById<TextView>(R.id.username)
+        username.setOnClickListener {
+            val intent = Intent(this, Other_Person_Profile::class.java)
+            startActivity(intent)   // <-- missing line
+            finish()
+        }
+
 
         cameraIcon=findViewById(R.id.camera)
         capturedImage=findViewById(R.id.captured_image)

@@ -12,6 +12,19 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Assignment1">
         <activity
+            android:name=".Other_Person_Profile"
+            android:exported="false" />
+        <activity
+            android:name=".ui.login.other_profile"
+            android:exported="false"
+            android:label="@string/title_activity_other_profile" />
+        <activity
+            android:name=".Notification_following"
+            android:exported="false" />
+        <activity
+            android:name=".Notification_You"
+            android:exported="false" />
+        <activity
             android:name=".Edit_profile"
             android:exported="false" />
         <activity

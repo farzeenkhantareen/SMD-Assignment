@@ -9,7 +9,6 @@
     android:background="#FFFFFF"
     >
 
-        <!-- Search Bar Container -->
         <RelativeLayout
             android:layout_marginTop="20dp"
             android:id="@+id/search_container"
@@ -36,7 +35,6 @@
                 android:textSize="16sp">
 
             </EditText>
-            <!-- Search Icon -->
             <ImageView
                 android:id="@+id/search_icon"
                 android:layout_width="24dp"
@@ -47,7 +45,6 @@
                 android:src="@drawable/ic_search"
                 />
 
-            <!-- Clear Button -->
             <ImageView
                 android:id="@+id/clear_button"
                 android:layout_width="62dp"
@@ -61,7 +58,6 @@
 
                  />
 
-            <!-- Clear Text -->
             <TextView
                 android:id="@+id/clear_text"
                 android:layout_width="wrap_content"
@@ -76,7 +72,6 @@
 
         </RelativeLayout>
 
-        <!-- Tab Bar -->
         <LinearLayout
             android:id="@+id/tab_bar"
             android:layout_width="match_parent"
@@ -129,7 +124,6 @@
 
         </LinearLayout>
 
-        <!-- Divider -->
         <View
             android:id="@+id/divider"
             android:layout_width="match_parent"
@@ -137,7 +131,6 @@
             android:layout_below="@id/tab_bar"
             android:background="#E0E0E0" />
 
-        <!-- Search Results ScrollView -->
         <ScrollView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -149,7 +142,6 @@
                 android:orientation="vertical"
                 android:paddingTop="8dp">
 
-                <!-- Account Result -->
                 <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -162,7 +154,6 @@
                     android:paddingBottom="12dp"
                     tools:ignore="ExtraText">
 
-                    <!-- Profile Picture -->
                     <de.hdodenhof.circleimageview.CircleImageView
                         android:id="@+id/profile_pic_1"
                         android:layout_width="48dp"
@@ -173,7 +164,6 @@
                         app:civ_border_width="2dp"
                         app:civ_border_color="#000000"/>
 
-                    <!-- Account Info -->
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -201,7 +191,6 @@
 
                 </RelativeLayout>
 
-                <!-- Hashtag Result 1 -->
                 <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -213,7 +202,6 @@
                     android:paddingEnd="16dp"
                     android:paddingBottom="12dp">
 
-                    <!-- Hashtag Icon -->
                     <TextView
                         android:id="@+id/hashtag_icon_1"
                         android:layout_width="48dp"
@@ -227,7 +215,6 @@
                         android:textSize="24sp"
                         android:textStyle="bold" />
 
-                    <!-- Hashtag Info -->
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -255,7 +242,6 @@
 
                 </RelativeLayout>
 
-                <!-- Hashtag Result 2 -->
                 <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -267,7 +253,6 @@
                     android:paddingEnd="16dp"
                     android:paddingBottom="12dp">
 
-                    <!-- Hashtag Icon -->
                     <TextView
                         android:id="@+id/hashtag_icon_2"
                         android:layout_width="48dp"
@@ -281,7 +266,6 @@
                         android:textSize="24sp"
                         android:textStyle="bold" />
 
-                    <!-- Hashtag Info -->
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -309,7 +293,6 @@
 
                 </RelativeLayout>
 
-                <!-- Hashtag Result 3 -->
                 <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -321,7 +304,6 @@
                     android:paddingEnd="16dp"
                     android:paddingBottom="12dp">
 
-                    <!-- Hashtag Icon -->
                     <TextView
                         android:id="@+id/hashtag_icon_3"
                         android:layout_width="48dp"
@@ -335,7 +317,6 @@
                         android:textSize="24sp"
                         android:textStyle="bold" />
 
-                    <!-- Hashtag Info -->
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -363,7 +344,6 @@
 
                 </RelativeLayout>
 
-                <!-- Hashtag Result 4 -->
                 <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -375,7 +355,6 @@
                     android:paddingEnd="16dp"
                     android:paddingBottom="12dp">
 
-                    <!-- Hashtag Icon -->
                     <TextView
                         android:id="@+id/hashtag_icon_4"
                         android:layout_width="48dp"
@@ -389,7 +368,6 @@
                         android:textSize="24sp"
                         android:textStyle="bold" />
 
-                    <!-- Hashtag Info -->
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -417,7 +395,6 @@
 
                 </RelativeLayout>
 
-                <!-- Hashtag Result 5 -->
                 <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -429,7 +406,6 @@
                     android:paddingEnd="16dp"
                     android:paddingBottom="12dp">
 
-                    <!-- Hashtag Icon -->
                     <TextView
                         android:id="@+id/hashtag_icon_5"
                         android:layout_width="48dp"
@@ -442,8 +418,6 @@
                         android:textColor="#666666"
                         android:textSize="24sp"
                         android:textStyle="bold" />
-
-                    <!-- Hashtag Info -->
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
