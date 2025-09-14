@@ -227,11 +227,36 @@
                     android:layout_below="@id/bio_description"
                     android:layout_alignParentStart="true"
                     android:layout_marginTop="8dp"
-                    android:text="Kyan.co"
                     android:textColor="@android:color/black"
                     android:textSize="14sp"
                     android:textStyle="bold" />
+                <FrameLayout
+                    android:id="@+id/page12_multiple_profiles_container"
+                    android:layout_width="50dp"
+                    android:layout_marginTop="133dp"
+                    android:layout_height="32dp">
 
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/page12_kiero_profile"
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_gravity="start|top"
+                        android:src="@drawable/p1"
+                        app:civ_border_color="#FFFFFF"
+                        app:civ_border_width="2dp" />
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/page12_zackjohn_profile"
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_gravity="end|bottom"
+                        android:src="@drawable/story1"
+                        app:civ_border_color="#FFFFFF"
+                        app:civ_border_width="2dp" />
+
+
+
+                </FrameLayout>
                 <TextView
                     android:id="@+id/bio_followers"
                     android:layout_width="wrap_content"
@@ -239,9 +264,10 @@
                     android:layout_below="@id/bio_link"
                     android:layout_alignParentStart="true"
                     android:layout_marginTop="4dp"
-                    android:text="Followed by your friend, another friend and 297 others"
+                    android:text="              Followed by your Xaviar, Kareene and 297 others"
                     android:textColor="#606060"
-                    android:textSize="14sp" />
+                    android:textSize="14sp"
+                    android:textStyle="bold"/>
 
             </RelativeLayout>
 
@@ -261,7 +287,7 @@
                     android:layout_width="6dp"
                     android:layout_height="40dp"
                     android:layout_weight="1"
-                    android:layout_marginEnd="8dp"
+                    android:layout_marginEnd="1dp"
                     android:text="Following ▼"
                     android:textSize="14sp"
                     android:textStyle="bold"
@@ -273,7 +299,7 @@
                     android:layout_width="5dp"
                     android:layout_height="40dp"
                     android:layout_weight="1"
-                    android:layout_marginStart="8dp"
+                    android:layout_marginStart="2dp"
                     android:backgroundTint="#FFCCCCCC"
                     android:text="Message"
                     android:textColor="@color/black"
@@ -284,12 +310,21 @@
                     android:layout_width="wrap_content"
                     android:layout_height="40dp"
                     android:layout_weight="1"
-                    android:layout_marginStart="8dp"
+                    android:layout_marginStart="4dp"
                     android:backgroundTint="#FFCCCCCC"
                     android:text="Email"
                     android:textColor="@color/black"
                     android:textSize="14sp"
                     android:textStyle="bold" />
+                <ImageView
+                    android:id="@+id/suggestion"
+                    android:layout_width="30dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:layout_marginStart="1dp"
+                    android:backgroundTint="#FFCCCCCC"
+                    android:src="@drawable/suggestion_ic"
+                     />
 
             </LinearLayout>
 
