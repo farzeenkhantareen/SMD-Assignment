@@ -1,21 +1,20 @@
 package com.example.assignment1
 
-import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
+import android.widget.Button
 import android.widget.ImageView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 
-class Other_Person_Profile : AppCompatActivity() {
-    @SuppressLint("SuspiciousIndentation")
+class Other_Person_Profile_follow : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        setContentView(R.layout.other_person_profile)
-    val nav_home=findViewById<ImageView>(R.id.nav_home)
+        setContentView(R.layout.activity_other_person_profile_follow)
+        val nav_home=findViewById<ImageView>(R.id.nav_home)
         nav_home.setOnClickListener {
             val intent = Intent(this, Main_feed::class.java)
             startActivity(intent)   // <-- missing line
@@ -42,6 +41,12 @@ class Other_Person_Profile : AppCompatActivity() {
         val back_icon=findViewById<ImageView>(R.id.back_icon)
         back_icon.setOnClickListener {
             val intent = Intent(this, Main_feed::class.java)
+            startActivity(intent)   // <-- missing line
+            finish()
+        }
+        val follow_button=findViewById<Button>(R.id.follow_button)
+        follow_button.setOnClickListener {
+            val intent = Intent(this, Other_Person_Profile::class.java)
             startActivity(intent)   // <-- missing line
             finish()
         }

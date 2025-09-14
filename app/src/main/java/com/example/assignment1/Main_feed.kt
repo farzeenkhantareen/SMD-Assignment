@@ -53,13 +53,20 @@ class Main_feed : AppCompatActivity() {
         }
         val profile_pic1=findViewById<ImageView>(R.id.profile_pic1)
         profile_pic1.setOnClickListener {
-            val intent = Intent(this, Other_Person_Profile::class.java)
+            val intent = Intent(this, Other_Person_Profile_follow::class.java)
             startActivity(intent)   // <-- missing line
+            finish()
 
         }
         val username=findViewById<TextView>(R.id.username)
         username.setOnClickListener {
-            val intent = Intent(this, Other_Person_Profile::class.java)
+            val intent = Intent(this, Other_Person_Profile_follow::class.java)
+            startActivity(intent)   // <-- missing line
+            finish()
+        }
+        val story=findViewById<ImageView>(R.id.story)
+        story.setOnClickListener {
+            val intent = Intent(this, Story::class.java)
             startActivity(intent)   // <-- missing line
             finish()
         }

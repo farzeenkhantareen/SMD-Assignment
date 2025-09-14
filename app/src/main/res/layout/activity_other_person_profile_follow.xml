@@ -37,7 +37,7 @@
                     android:layout_centerVertical="true"
                     android:layout_alignParentStart="true"
                     android:src="@drawable/ic_arrow_back"
-                     />
+                    />
 
                 <TextView
                     android:id="@+id/username_text"
@@ -65,7 +65,7 @@
                     android:layout_alignParentEnd="true"
                     android:layout_centerVertical="true"
                     android:src="@drawable/more_icon"
-                     />
+                    />
 
             </RelativeLayout>
 
@@ -262,11 +262,11 @@
                     android:layout_height="40dp"
                     android:layout_weight="1"
                     android:layout_marginEnd="8dp"
-                    android:text="Following ▼"
+                    android:text="Follow"
                     android:textSize="14sp"
                     android:textStyle="bold"
-                    android:textColor="@color/black"
-                    android:backgroundTint="#FFCCCCCC" />
+                    android:textColor="@color/white"
+                    android:backgroundTint="@color/main_color" />
 
                 <Button
                     android:id="@+id/message_button"
@@ -298,7 +298,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
                 android:layout_below="@id/action_buttons_container"
-                 />
+                />
 
             <LinearLayout
                 android:id="@+id/highlights_container"
@@ -509,129 +509,129 @@
             </LinearLayout>
 
 
-    <RelativeLayout
-        android:id="@+id/posts_grid"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/tab_selector">
+            <RelativeLayout
+                android:id="@+id/posts_grid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tab_selector">
 
-        <RelativeLayout
-            android:id="@+id/row_1"
-            android:layout_width="match_parent"
-            android:layout_height="125dp"
-            android:layout_alignParentTop="true"
-            >
+                <RelativeLayout
+                    android:id="@+id/row_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="125dp"
+                    android:layout_alignParentTop="true"
+                    >
 
-            <ImageView
-                android:id="@+id/post_1_1"
-                android:layout_width="120dp"
-                android:layout_height="match_parent"
-                android:adjustViewBounds="true"
-                android:cropToPadding="true"
-                android:scaleType="centerCrop"
-                android:src="@drawable/p_post1" />
+                    <ImageView
+                        android:id="@+id/post_1_1"
+                        android:layout_width="120dp"
+                        android:layout_height="match_parent"
+                        android:adjustViewBounds="true"
+                        android:cropToPadding="true"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/p_post1" />
 
-            <ImageView
-                android:id="@+id/post_1_2"
-                android:layout_width="120dp"
-                android:layout_height="match_parent"
-                android:layout_centerHorizontal="true"
-                android:layout_toRightOf="@+id/post_1_1"
-                android:cropToPadding="true"
-                android:adjustViewBounds="true"
-                android:scaleType="centerCrop"
-                android:src="@drawable/p_post2" />
+                    <ImageView
+                        android:id="@+id/post_1_2"
+                        android:layout_width="120dp"
+                        android:layout_height="match_parent"
+                        android:layout_centerHorizontal="true"
+                        android:layout_toRightOf="@+id/post_1_1"
+                        android:cropToPadding="true"
+                        android:adjustViewBounds="true"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/p_post2" />
 
-            <ImageView
-                android:id="@+id/post_1_3"
-                android:layout_width="120dp"
-                android:layout_height="match_parent"
-                android:layout_toEndOf="@id/post_1_2"
-                android:layout_weight="1"
-                android:scaleType="centerCrop"
-                android:adjustViewBounds="true"
-                android:src="@drawable/p_post3" />
+                    <ImageView
+                        android:id="@+id/post_1_3"
+                        android:layout_width="120dp"
+                        android:layout_height="match_parent"
+                        android:layout_toEndOf="@id/post_1_2"
+                        android:layout_weight="1"
+                        android:scaleType="centerCrop"
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/p_post3" />
 
-        </RelativeLayout>
+                </RelativeLayout>
 
-        <RelativeLayout
-            android:id="@+id/row_2"
-            android:layout_width="match_parent"
-            android:layout_height="125dp"
-            android:layout_below="@id/row_1"
-            android:layout_marginTop="2dp">
-            <ImageView
-                android:id="@+id/post_2_1"
-                android:layout_width="120dp"
-                android:layout_height="match_parent"
-                android:adjustViewBounds="true"
-                android:cropToPadding="true"
-                android:scaleType="centerCrop"
-                android:src="@drawable/p_post4" />
+                <RelativeLayout
+                    android:id="@+id/row_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="125dp"
+                    android:layout_below="@id/row_1"
+                    android:layout_marginTop="2dp">
+                    <ImageView
+                        android:id="@+id/post_2_1"
+                        android:layout_width="120dp"
+                        android:layout_height="match_parent"
+                        android:adjustViewBounds="true"
+                        android:cropToPadding="true"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/p_post4" />
 
-            <ImageView
-                android:id="@+id/post_2_2"
-                android:layout_width="120dp"
-                android:layout_height="match_parent"
-                android:layout_centerHorizontal="true"
-                android:layout_toRightOf="@+id/post_2_1"
-                android:cropToPadding="true"
-                android:adjustViewBounds="true"
-                android:scaleType="centerCrop"
-                android:src="@drawable/p_post5" />
+                    <ImageView
+                        android:id="@+id/post_2_2"
+                        android:layout_width="120dp"
+                        android:layout_height="match_parent"
+                        android:layout_centerHorizontal="true"
+                        android:layout_toRightOf="@+id/post_2_1"
+                        android:cropToPadding="true"
+                        android:adjustViewBounds="true"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/p_post5" />
 
-            <ImageView
-                android:id="@+id/post_2_3"
-                android:layout_width="120dp"
-                android:layout_height="match_parent"
-                android:layout_toEndOf="@id/post_2_2"
-                android:scaleType="centerCrop"
-                android:adjustViewBounds="true"
-                android:src="@drawable/p_post6" />
+                    <ImageView
+                        android:id="@+id/post_2_3"
+                        android:layout_width="120dp"
+                        android:layout_height="match_parent"
+                        android:layout_toEndOf="@id/post_2_2"
+                        android:scaleType="centerCrop"
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/p_post6" />
 
-        </RelativeLayout>
+                </RelativeLayout>
 
-        <RelativeLayout
-            android:id="@+id/row_3"
-            android:layout_width="match_parent"
-            android:layout_height="125dp"
-            android:layout_below="@id/row_2"
-            android:layout_marginTop="2dp"
-            android:layout_marginBottom="10dp">
+                <RelativeLayout
+                    android:id="@+id/row_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="125dp"
+                    android:layout_below="@id/row_2"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginBottom="10dp">
 
-            <ImageView
-                android:id="@+id/post_3_1"
-                android:layout_width="120dp"
-                android:layout_height="match_parent"
-                android:adjustViewBounds="true"
-                android:cropToPadding="true"
-                android:scaleType="centerCrop"
-                android:src="@drawable/p_post7" />
+                    <ImageView
+                        android:id="@+id/post_3_1"
+                        android:layout_width="120dp"
+                        android:layout_height="match_parent"
+                        android:adjustViewBounds="true"
+                        android:cropToPadding="true"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/p_post7" />
 
-            <ImageView
-                android:id="@+id/post_3_2"
-                android:layout_width="120dp"
-                android:layout_height="match_parent"
-                android:layout_centerHorizontal="true"
-                android:layout_toRightOf="@+id/post_3_1"
-                android:layout_weight="1"
-                android:cropToPadding="true"
-                android:adjustViewBounds="true"
-                android:scaleType="centerCrop"
-                android:src="@drawable/p_post8" />
+                    <ImageView
+                        android:id="@+id/post_3_2"
+                        android:layout_width="120dp"
+                        android:layout_height="match_parent"
+                        android:layout_centerHorizontal="true"
+                        android:layout_toRightOf="@+id/post_3_1"
+                        android:layout_weight="1"
+                        android:cropToPadding="true"
+                        android:adjustViewBounds="true"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/p_post8" />
 
-            <ImageView
-                android:id="@+id/post_3_3"
-                android:layout_width="120dp"
-                android:layout_height="match_parent"
-                android:layout_toEndOf="@id/post_3_2"
-                android:scaleType="centerCrop"
-                android:adjustViewBounds="true"
-                android:src="@drawable/p_post9" />
+                    <ImageView
+                        android:id="@+id/post_3_3"
+                        android:layout_width="120dp"
+                        android:layout_height="match_parent"
+                        android:layout_toEndOf="@id/post_3_2"
+                        android:scaleType="centerCrop"
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/p_post9" />
 
-        </RelativeLayout>
+                </RelativeLayout>
 
-    </RelativeLayout>
+            </RelativeLayout>
 
 
 

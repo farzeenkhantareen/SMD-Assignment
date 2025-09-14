@@ -12,6 +12,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Assignment1">
         <activity
+            android:name=".Other_Person_Profile_follow"
+            android:exported="false" />
+        <activity
+            android:name=".Story"
+            android:exported="false" />
+        <activity
             android:name=".Other_Person_Profile"
             android:exported="false" />
         <activity
